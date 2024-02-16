@@ -1,0 +1,76 @@
+.cartscreen {
+	display: flex;
+	max-width: 1300px;
+	top: 0;
+	margin: 2rem auto;
+}
+
+.cartscreen h2 {
+	margin-bottom: 1rem;
+    background: #fff;
+    padding: 0.5rem;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 40%);
+    margin-top: -15px;
+}
+.cartscreen__left {
+flex: 0.7;
+margin-right: 0.5rem;
+background: transparent;
+padding: 1rem;
+}
+
+.cartscreen__right {
+	flex: 0.3;
+	background: #fff;
+	box-shadow: 0px 1px 4px rgb(0, 0, 0,0.4);
+	height: fit-content;
+}
+
+.cartscreen__right div {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+}
+.cartscreen__right div:last-child {
+	border: none;
+}
+.cartscreen__info p {
+	padding: 8px;
+}
+.cartscreen__right div button {
+	padding: 10px 16px;
+	width: 100%;
+	background: #171717;
+	color: #f4f4f4;
+	border: 1px solid #171717;
+	cursor: pointer;
+}
+
+.cartscreen__right div button:hover {
+	opacity: 0.9;
+}
+.gotoback_button {
+	box-shadow: 0px 1px 4px rgb(0 0 0 / 40%);
+    padding: 0rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: black;
+}
+.gotoback_button .fa-arrow-left {
+	color: #fff;
+}
+.fa-home {
+	font-size: 1em;
+    padding: 0.5rem;
+    color: #fff;
+}
+@media screen and (min-width: 300px) and (max-width: 380px) {
+	.cartscreen__left {
+		flex: 0.7 1;
+		margin-right: 0px;
+		background: transparent;
+		padding: 5px;
+	}
+	.cartscreen__right div {
+		padding: 0rem;
+	}
+}

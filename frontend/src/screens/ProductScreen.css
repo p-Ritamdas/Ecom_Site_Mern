@@ -1,0 +1,123 @@
+.productscreen {
+	max-width: 1300px;
+	margin: 1rem auto;
+	display: flex;
+}
+.productscreen__left {
+	display: flex;
+	flex: 0.8;
+}
+.left__image {
+	margin: 1rem;
+	flex: 0.6;
+}
+.left__info {
+	margin: 1rem;
+	flex: 0.4;
+	background: #fff;
+	font-size: 0.9rem;
+	height: fit-content;
+}
+.left__name {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+.left__info > p, .right__info > p {
+padding: 1rem;
+border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+.left__info > p:last-child, .right__info > p:last-child {
+border: none;
+}
+.productscreen__right {
+	flex: 0.2;
+}
+.right__info {
+	width: 250px;
+	margin: 1rem;
+	background: #fff;
+	box-shadow: 0 1px 4px rgb(0, 0, 0,0.4);
+}
+.right__info p {
+	display: grid;
+	font-size: 0.8rem;
+	padding: 1rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.right__info p > button {
+	grid-column: 1/-1;
+	padding: 8px 16px;
+	background: #171717;
+	color: #f4f4f4;
+	border:  1px solid #171717;
+	cursor: pointer;
+}
+.right__info  select {
+	padding: 10px 16px;
+}
+
+
+.left__name span {
+	font-size: 0.8rem;
+}
+.productscreen__left > h3 > a {
+	font-size: 1.5em;
+	position: absolute;
+	top: 13%;
+	z-index:999;
+}
+.productscreen__left > h3 > a > i.fa-arrow-left{
+	font-size: 1em;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.fa-arrow-left {
+	box-shadow: 0px 1px 4px rgb(0 0 0 / 40%);
+    padding: 0.4rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: black;
+	color: #fff;
+	border:2px solid #fff;
+}
+@media  (max-width:  500px) {
+	.productscreen__left > h3 > a {
+		top: 9% !important;
+	}
+}
+@media  (max-width:  900px) {
+	.productscreen {
+		flex-direction: column;
+	}
+	.productscreen__left {
+		flex-direction: column;
+		flex: 1;
+	}
+
+	.left__image {
+		flex: 1;
+		margin: 2rem;
+	}
+
+	.product__info {
+		flex: 1;
+	}
+	.product__right {
+		flex: 1;
+		padding: 1rem;
+	}
+	.right__info {
+		width: 100%;
+		margin: 0;
+	}
+	.productscreen__left > h3 > a {
+		top: 10% !important;
+	}
+}
+
+@media (max-width:  1024px) {
+	.productscreen__left > h3 > a {
+		top: 5%;
+	}
+}

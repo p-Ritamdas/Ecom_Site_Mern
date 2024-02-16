@@ -1,0 +1,34 @@
+.cartitem {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+	padding: 1rem;
+	margin-bottom: 8px;
+	width: 100%;
+	gap: 0px;
+	background: #fff;
+	border-radius: 2px;
+	place-items:  center;
+}
+.cartitem__name {
+	text-decoration: none;
+	color: #171717;
+}
+.cartitem__name:hover {
+	text-decoration: none;
+	color: #f4f4f4;
+}
+.cartitem__select {
+	padding:  10px 16px;
+}
+.cartitem__deleteBtn {
+	padding: 10px 16px;
+	color: red;
+	background: #fff;
+	border: 1px solid #171717;
+	cursor: pointer;
+	transform: all 0.3s ease-out;
+}
+.cartitem__deleteBtn:hover,.cartitem__deleteBtn:focus,.cartitem__deleteBtn:active {
+	background: #171717;
+	transform: scale(1.2);
+}
